@@ -8,8 +8,8 @@ path = "C:\\Users\\COM\\chromedriver_win32\\chromedriver.exe"
 headers = {'User-Agent': 'Mozilla/5.0'}
 driver = webdriver.Chrome(path)
 pageNumber=1
-for i in range(2):
-    pageNumber += 1
+# for i in range(2):
+#     pageNumber += 1
 
 url = 'https://sports.news.naver.com/wfootball/news/index.nhn?page={}&isphoto=N&type=latest'.format(pageNumber)
 
