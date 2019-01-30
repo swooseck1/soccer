@@ -2,8 +2,8 @@ import requests
 import csv
 from bs4 import BeautifulSoup 
 
-# search_word = "장학"
-url = 'http://www.seoultech.ac.kr/service/info/notice/'
+search_word = "장학"
+url = 'http://www.seoultech.ac.kr/service/info/notice/?bidx=4691&bnum=4691&allboard=false&page=&size=&searchtype=1&searchtext={}'.format(search_word)
 headers = {'User-Agent': 'Mozilla/5.0'}
  
 req = requests.get(url, headers=headers) # connection
